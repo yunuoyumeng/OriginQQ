@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="author" content="沐风" />
+  	<meta name="description" content="一个Material Design样式的APP介绍页面" />
+  	<meta name="keywords" content="APP介绍,APP主页" />
+    <link rel="stylesheet" href="./css/mdui.min.css"/>
+    <title>8.8.98猫雨雫</title>
+</head>
+<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
+
+	<div class="mdui-appbar mdui-appbar-fixed mdui-text-color-text-theme mdui-shadow-0" style="transition:2s">
+  		<div class="mdui-toolbar">
+  			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}"><i class="mdui-icon material-icons">menu</i></button>
+    		<a href="javascript:;" class="mdui-typo-title" id="main-title">APP</a>
+    		<div class="mdui-toolbar-spacer"></div>
+    		<button class="mdui-btn mdui-btn-icon" mdui-menu="{target:'#main-menu'}"><i class="mdui-icon material-icons">more_vert</i></button>
+    		<ul class="mdui-menu" id="main-menu">
+              	<li class="mdui-menu-item" mdui-dialog="{target:'#post'}">
+                	<a href="javascript:void(0);" class="mdui-ripple">公告</a>
+              	</li>
+            </ul>
+  		</div>
+	</div>
+	
+	<div class="mdui-drawer" id="main-drawer">
+  		<ul class="mdui-list">
+        	<li class="mdui-subheader">Menu</li>
+        	<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://docs.example.com';">
+          		<i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+          		<div class="mdui-list-item-content">文档</div>
+        	</li>
+        	<li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://www.123pan.com/s/ImwDVv-N3hU3';">
+          		<i class="mdui-list-item-icon mdui-icon material-icons">cloud_download</i>
+          		<div class="mdui-list-item-content">下载</div>
+        	</li>
+       	</ul>
+        	<div class="mdui-subheader">Powered</div>
+        <div class="mdui-m-x-2">
+        	<div class="mdui-chip">
+				<img class="mdui-chip-icon" src="https://q.qlogo.cn/headimg_dl?dst_uin=3487095186&spec=640"/>
+				<span class="mdui-chip-title">雨诺域梦</span>
+			</div>
+			<div class="mdui-chip">
+				<img class="mdui-chip-icon" src="https://q.qlogo.cn/headimg_dl?dst_uin=1243489381&spec=640"/>
+				<span class="mdui-chip-title">小陌</span>
+			</div>
+			
+        	<div class="mdui-chip">
+				<span class="mdui-chip-icon">M</span>
+				<span class="mdui-chip-title">MDUI</span>
+			</div>
+		</div>
+  	</div>
+  	
+  	<div class="mdui-dialog" id="post">
+      	<div class="mdui-tab mdui-tab-full-width" mdui-tab>
+        	<a href="#updateLog" class="mdui-ripple">更新记录</a>
+        	<a href="#autherSay" class="mdui-ripple">作者的话</a>
+      	</div>
+      	<div id="autherSay" class="mdui-p-a-2 mdui-typo">
+        	<p>本APP将不进行维护，如出现问题请自行解决！</p>
+      	</div>
+      	<div id="updateLog" class="mdui-p-a-2">
+        	<ul class="mdui-list">
+  				<li class="mdui-list-item mdui-ripple">2022-07-05 无</li>
+  				<li class="mdui-divider"></li>
+  				<li class="mdui-list-item mdui-ripple">2022-xx07-05 更新了第二个版本</li>
+			</ul>
+      	</div>
+    </div>
+  	
+  	<div class="mdui-color-white mdui-text-center" style="padding-top:120px;padding-bottom:30px;">
+  		<img class="mdui-shadow-5" src="/img/hcw.png" width="80" height="80" style="border-radius:10px;" />
+  		<h2>8.8.98猫雨雫</h2>
+  		<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" mdui-tooltip="{content: 'v1.0'}" onclick="window.open('https://download.example.com/')"><i class="mdui-icon material-icons">file_download</i> 下载</button>
+  	</div>
+  	
+  	<div class="mdui-container-fluid mdui-p-y-4 mdui-text-center mdui-color-white">
+  		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;" src="/img/8.8.98myn1.png" />
+  		<h2 class="mdui-text-color-theme">逆天</h2>
+  		<p>距离社死更进一步</p>
+  		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;" src="/img/8.8.98myn2.png" />
+  		<h2 class="mdui-text-color-theme">DD斩首</h2>
+  		<p>小孩子才做选择，我全都要</p>
+  		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;" src="/img/8.8.98myn3.png" />
+  		<h2 class="mdui-text-color-theme">漂亮</h2>
+  		<p>漂亮滴很呐（喜）</p>
+  		
+  	</div>
+	
+	<!-- footer -->
+	<div class="mdui-p-y-2 mdui-color-theme mdui-text-color-white mdui-text-center">
+		<a class="mdui-btn mdui-btn-icon" href="mailto:3487095186@qq.com"><i class="mdui-icon material-icons">email</i></a><br>
+		<span>©Copyright 2021 雨诺域梦</span>
+	</div>
+	
+<!--
+vConsole控制台
+<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
+<script>
+var vConsole = new VConsole ();
+</script>
+-->
+	<script src="./js/mdui.min.js"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  $(window).scroll(function(){
+	    var scrollTop = $(window).scrollTop();
+	   if (scrollTop < 100) {
+	      $(".mdui-appbar").removeClass("mdui-color-theme");
+          $(".mdui-appbar").addClass("mdui-text-color-black");
+          $(".mdui-appbar").removeClass("mdui-text-color-white")
+	   } else {
+	      $(".mdui-appbar").addClass("mdui-text-color-white");
+	      $(".mdui-appbar").addClass("mdui-color-theme");
+	      $(".mdui-appbar").removeClass("mdui-text-color-black");
+	   }
+	  });
+	</script>
+</body>
+</html>
