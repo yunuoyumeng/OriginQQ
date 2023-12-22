@@ -10,22 +10,26 @@
 
   <link rel="stylesheet" href="css/mdui.min.css" />
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <script src="js/jquery.js"></script>
   <link rel="icon" href="icons/icon.svg">
   <title>小陌美化社</title>
 </head>
 
 <body>
-  <nav class="navbar bg-body-tertiary box-shadow" style="background-color: #26c6da!important">
+  <nav class="navbar bg-body-tertiary box-shadow z-3 fixed-top" id="navbar"
+    style="background-color: #26c6da !important;">
     <div class="container-fluid">
-      <a class="navbar-brand" style="color: white; font-size: 25px; font-weight: 500; margin: 0 16px;">小陌美化社</a>
+      <a class="navbar-brand" id="navbar-brand" href="/index.html"
+        style="color: white; font-size: 25px; font-weight: 500; margin: 0 16px;">小陌美化社</a>
     </div>
   </nav>
 
-  <div class="mdui-color-cyan-400 mdui-typo-display-1 mdui-text-color-white mdui-text-center" style="padding:70px;">
+  <div class="mdui-color-cyan-400 mdui-typo-display-1 mdui-text-color-white mdui-text-center translate-025s" id="title"
+    style="padding:70px;">
     <div id="sub-title">
       <span style="font-size:30px;">Genes Hunt</span>
     </div>
-    <div id="sub-title">
+    <div id="sub-title-1">
       <span style="font-size:50px;">工作室</span>
     </div>
     <button class="mdui-btn mdui-btn-raised"
@@ -47,7 +51,7 @@
 
   <div class="mdui-card">
     <div class="mdui-card-media">
-      <img src="http://shp.qpic.cn/collector/3393016441/419c2911-cfd6-4b49-b26e-574e85ed7d98/0" />
+      <img src="http://shp.qpic.cn/collector/3393016441/419c2911-cfd6-4b49-b26e-574e85ed7d98/0" loading="lazy" />
       <div class="mdui-card-media-covered">
         <div class="mdui-card-primary mdui-ripple">
           <div class="mdui-card-primary-title">关于</div>
@@ -86,222 +90,212 @@
       <label>其他软件</label>
     </a>
   </div>
-  <div id="horizon" <ul class="mdui-list">
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img
-          src="https://ts1.cn.mm.bing.net/th/id/R-C.7a002178ee372889748fa516ae2e32b3?rik=C8qOXejvufqx8A&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f24%2f25%2fWbUdq4WCJ6.jpg&ehk=ERsMyu23nW1x%2buDgWeFRS8PNp5N8Eqi%2bOYeOFqglh6c%3d&risl=&pid=ImgRaw&r=0" />
-      </div>
-      <div class="mdui-list-item-content" onclick="window.location.href='./Download/8.8.98myn.html';">[猫雨雫]8.8.98</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line" onclick="window.location.href='./Download/8.8.98myn.html';"><span class="mdui-text-color-theme-text"></div>
-      <i class="mdui-list-item-icon mdui-icon material-icons">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://img.tukuppt.com/png_preview/00/04/71/Gf5fYagiJG.jpg!/fw/780" />
-      </div>
-      <div class="mdui-list-item-content">暂无</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://img.tukuppt.com/png_preview/00/04/71/Gf5fYagiJG.jpg!/fw/780" />
-      </div>
-      <div class="mdui-list-item-content">暂无</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://img.tukuppt.com/png_preview/00/04/71/Gf5fYagiJG.jpg!/fw/780" />
-      </div>
-      <div class="mdui-list-item-content">暂无</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
+  <div id="horizon">
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img
+            src="https://ts1.cn.mm.bing.net/th/id/R-C.7a002178ee372889748fa516ae2e32b3?rik=C8qOXejvufqx8A&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f24%2f25%2fWbUdq4WCJ6.jpg&ehk=ERsMyu23nW1x%2buDgWeFRS8PNp5N8Eqi%2bOYeOFqglh6c%3d&risl=&pid=ImgRaw&r=0" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='./Download/8.8.98myn.html';">[猫雨雫]8.8.98
+        </div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='./Download/8.8.98myn.html';"><span class="mdui-text-color-theme-text"></div>
+        <i class="mdui-list-item-icon mdui-icon material-icons">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://img.tukuppt.com/png_preview/00/04/71/Gf5fYagiJG.jpg!/fw/780" />
+        </div>
+        <div class="mdui-list-item-content">暂无</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://img.tukuppt.com/png_preview/00/04/71/Gf5fYagiJG.jpg!/fw/780" />
+        </div>
+        <div class="mdui-list-item-content">暂无</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://img.tukuppt.com/png_preview/00/04/71/Gf5fYagiJG.jpg!/fw/780" />
+        </div>
+        <div class="mdui-list-item-content">暂无</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
     </ul>
   </div>
-  <div id="BlueArchive" <ul class="mdui-list">
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
-      </div>
-      <div class="mdui-list-item-content">暂无</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
-      </div>
-      <div class="mdui-list-item-content">暂无</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
-      </div>
-      <div class="mdui-list-item-content">暂无</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
-      </div>
-      <div class="mdui-list-item-content">暂无</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
+  <div id="BlueArchive">
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
+        </div>
+        <div class="mdui-list-item-content">暂无</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
+        </div>
+        <div class="mdui-list-item-content">暂无</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
+        </div>
+        <div class="mdui-list-item-content">暂无</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
+        </div>
+        <div class="mdui-list-item-content">暂无</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons" onclick="window.location.href='./';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
     </ul>
   </div>
-  <div id="Origin" <ul class="mdui-list">
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://shizuku.rikka.app/logo.png" />
-      </div>
-      <div class="mdui-list-item-content">Shizuku</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">安卓11以上必备</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://shizuku.rikka.app/';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://viayoo.com/zh-cn/images/logo.png" />
-      </div>
-      <div class="mdui-list-item-content">Via</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">最简约最小的浏览器</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://viayoo.com/';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://p1.bdxiguaimg.com/origin/pgc-image/8069753dcbde447aa5eacf1bf3f390b5" />
-      </div>
-      <div class="mdui-list-item-content">AGE动漫</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">看番必备</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://www.agefans.app/';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img
-          src="https://t7.baidu.com/it/u=1002937843,2476257817&fm=74&app=80&size=w348&n=0&f=PNG&fmt=auto&maxorilen2heic=2000000?s=9A84546A6AE0E95D48B6F1010300F09B" />
-      </div>
-      <div class="mdui-list-item-content">PixEz</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">Pixiv三方客户端</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://github.com/Notsfsssf/pixez-flutter';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="http://musicfree.upup.fun/img/favicon.ico" />
-      </div>
-      <div class="mdui-list-item-content">MusicFree</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span
-          class="mdui-text-color-theme-text">一个插件化、定制化、无广告的开源音乐播放器</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='http://musicfree.upup.fun';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://pannss.bdstatic.com/m-static/base/static/images/favicon.ico" />
-      </div>
-      <div class="mdui-list-item-content">百度网盘</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">破解限速，可能不稳定</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://yu-meng.lanzoub.com/iOTKW07d6d3i';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="http://www.vmos.cn/media/static/images/icon.png" />
-      </div>
-      <div class="mdui-list-item-content">VMOS Pro</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">破解版本，可能不稳定</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://yu-meng.lanzoub.com/imeii07d7bla';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://pc.woozooo.com/favicon.ico" />
-      </div>
-      <div class="mdui-list-item-content">蓝云</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">蓝奏云三方客户端</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://lanzoux.com/ihM6G074ubng';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://www.bilibili.com/favicon.ico" />
-      </div>
-      <div class="mdui-list-item-content">哔哩哔哩</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">小破站[密码2333]
-      </div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='https://wwe.lanzoux.com/b015ll4sb';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <div class="mdui-list-item-avatar">
-        <img src="https://p2.itc.cn/images01/20220502/36e2f885139e43fa8d8846f828f80cf4.jpeg" />
-      </div>
-      <div class="mdui-list-item-content">待添加</div>
-      <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">别点，啥都没有</div>
-      <i class="mdui-list-item-icon mdui-icon material-icons"
-        onclick="window.location.href='http://www.bilibili.com/video/av80433022';">insert_link</i>
-    <li class="mdui-divider-inset mdui-m-y-0"></li>
-    </li>
+  <div id="Origin">
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://shizuku.rikka.app/logo.png" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='https://shizuku.rikka.app/';">Shizuku</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='https://shizuku.rikka.app/';"><span class="mdui-text-color-theme-text">安卓11以上必备
+        </div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://shizuku.rikka.app/';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://viayoo.com/zh-cn/images/logo.png" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='https://viayoo.com/';">Via</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line" onclick="window.location.href='https://viayoo.com/';">
+          <span class="mdui-text-color-theme-text">最简约最小的浏览器
+        </div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://viayoo.com/';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://p1.bdxiguaimg.com/origin/pgc-image/8069753dcbde447aa5eacf1bf3f390b5" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='https://www.agefans.app/';">AGE动漫</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='https://www.agefans.app/';"><span class="mdui-text-color-theme-text">看番必备</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://www.agefans.app/';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img
+            src="https://t7.baidu.com/it/u=1002937843,2476257817&fm=74&app=80&size=w348&n=0&f=PNG&fmt=auto&maxorilen2heic=2000000?s=9A84546A6AE0E95D48B6F1010300F09B" />
+        </div>
+        <div class="mdui-list-item-content"
+          onclick="window.location.href='https://github.com/Notsfsssf/pixez-flutter';">PixEz</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='https://github.com/Notsfsssf/pixez-flutter';">><span
+            class="mdui-text-color-theme-text">Pixiv三方客户端
+        </div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://github.com/Notsfsssf/pixez-flutter';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="http://musicfree.upup.fun/img/favicon.ico" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='http://musicfree.upup.fun';">MusicFree</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='http://musicfree.upup.fun';">
+          <span class="mdui-text-color-theme-text">一个插件化、定制化、无广告的开源音乐播放器</span>
+        </div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='http://musicfree.upup.fun';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://pannss.bdstatic.com/m-static/base/static/images/favicon.ico" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='https://yu-meng.lanzoub.com/iOTKW07d6d3i';">
+          百度网盘</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='https://yu-meng.lanzoub.com/iOTKW07d6d3i';"><span
+            class="mdui-text-color-theme-text">破解限速，可能不稳定
+        </div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://yu-meng.lanzoub.com/iOTKW07d6d3i';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="http://www.vmos.cn/media/static/images/icon.png" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='https://yu-meng.lanzoub.com/imeii07d7bla';">
+          VMOS Pro</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='https://yu-meng.lanzoub.com/imeii07d7bla';"><span
+            class="mdui-text-color-theme-text">破解版本，可能不稳定
+        </div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://yu-meng.lanzoub.com/imeii07d7bla';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://pc.woozooo.com/favicon.ico" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='https://lanzoux.com/ihM6G074ubng';">蓝云</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='https://lanzoux.com/ihM6G074ubng';"><span
+            class="mdui-text-color-theme-text">蓝奏云三方客户端</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://lanzoux.com/ihM6G074ubng';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://www.bilibili.com/favicon.ico" />
+        </div>
+        <div class="mdui-list-item-content" onclick="window.location.href='https://wwe.lanzoux.com/b015ll4sb';">哔哩哔哩
+        </div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"
+          onclick="window.location.href='https://wwe.lanzoux.com/b015ll4sb';"><span
+            class="mdui-text-color-theme-text">小破站[密码2333]
+        </div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://wwe.lanzoux.com/b015ll4sb';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar">
+          <img src="https://p2.itc.cn/images01/20220502/36e2f885139e43fa8d8846f828f80cf4.jpeg" />
+        </div>
+        <div class="mdui-list-item-content">待添加</div>
+        <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">别点，啥都没有</div>
+        <i class="mdui-list-item-icon mdui-icon material-icons"
+          onclick="window.location.href='https://www.bilibili.com/video/av80433022';">insert_link</i>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      </li>
     </ul>
-  </div>
-  <div class="mdui-card mdui-m-t-2">
-    <div class="mdui-card-primary">
-      <div class="mdui-card-primary-title mdui-text-color-theme">推荐站点</div>
-      <ul class="mdui-list">
-        <li class="mdui-list-item mdui-ripple">
-          <div class="mdui-list-item-avatar"><img
-              src="http://shp.qpic.cn/collector/3393016441/fbce787b-8276-474b-8548-f7164b27c856/0.png" /></div>
-          <div class="mdui-list-item-content" onclick="window.location.href='http://blog.yunuoym.fun';">
-            <div class="mdui-list-item-title">Genes Hunt-AP</div>
-            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">站长的个人blog
-            </div>
-          </div>
-        </li>
-        <li class="mdui-divider-inset mdui-m-y-0"></li>
-        <li class="mdui-list-item mdui-ripple">
-          <div class="mdui-list-item-avatar"><img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" /></div>
-          <div class="mdui-list-item-content" onclick="window.location.href='http://evol.ezyro.com';">
-            <div class="mdui-list-item-title">小志的个人主页</div>
-            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">站长的个人介绍站
-            </div>
-          </div>
-        </li>
-        <li class="mdui-divider-inset mdui-m-y-0"></li>
-        <li class="mdui-list-item mdui-ripple">
-          <div class="mdui-list-item-avatar"><img
-              src="https://user-center.cdn.bcebos.com/head/raw/uc.101.6669fd3d.N7SXOL3hydbwsALd9fBfWQ?x-bce-process=image/resize,m_lfit,w_200,h_200&autime=17" />
-          </div>
-          <div class="mdui-list-item-content" onclick="window.location.href='https://xbeibeix.com/api/bilibili/';">
-            <div class="mdui-list-item-title">小破站视频解析</div>
-            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">睿站视频下载
-            </div>
-          </div>
-      </ul>
-      </tbody>
-      </table>
-    </div>
-  </div>
-  </div>
   </div>
 
   <div class="mdui-card mdui-m-t-2 mdui-typo">
@@ -378,27 +372,72 @@
     </div>
   </div>
 
+  <div class="mdui-card mdui-m-t-2">
+    <div class="mdui-card-primary">
+      <div class="mdui-card-primary-title mdui-text-color-theme">推荐站点</div>
+      <ul class="mdui-list">
+        <li class="mdui-list-item mdui-ripple">
+          <div class="mdui-list-item-avatar">
+            <img src="http://shp.qpic.cn/collector/3393016441/fbce787b-8276-474b-8548-f7164b27c856/0.png" />
+          </div>
+          <div class="mdui-list-item-content" onclick="window.location.href='http://blog.yunuoym.fun';">
+            <div class="mdui-list-item-title">Genes Hunt-AP</div>
+            <div class="mdui-list-item-text mdui-list-item-one-line">
+              <span class="mdui-text-color-theme-text">站长的个人blog</span>
+            </div>
+          </div>
+        </li>
+        <li class="mdui-divider-inset mdui-m-y-0"></li>
+        <li class="mdui-list-item mdui-ripple">
+          <div class="mdui-list-item-avatar">
+            <img src="https://q2.qlogo.cn/g?b=qq&nk=3487095186&s=100&t=" />
+          </div>
+          <div class="mdui-list-item-content" onclick="window.location.href='http://evol.ezyro.com';">
+            <div class="mdui-list-item-title">小志的个人主页</div>
+            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">站长的个人介绍站
+            </div>
+          </div>
+        </li>
+        <li class="mdui-divider-inset mdui-m-y-0"></li>
+        <li class="mdui-list-item mdui-ripple">
+          <div class="mdui-list-item-avatar"><img
+              src="https://user-center.cdn.bcebos.com/head/raw/uc.101.6669fd3d.N7SXOL3hydbwsALd9fBfWQ?x-bce-process=image/resize,m_lfit,w_200,h_200&autime=17" />
+          </div>
+          <div class="mdui-list-item-content" onclick="window.location.href='https://xbeibeix.com/api/bilibili/';">
+            <div class="mdui-list-item-title">小破站视频解析</div>
+            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">睿站视频下载
+            </div>
+          </div>
+      </ul>
+      </tbody>
+      </table>
+    </div>
+  </div>
 
   <!-- footer -->
   <div class="mdui-divider position-fixed bottom-0"></div>
   <div class="mdui-p-y-2 mdui-color-cyan-400 mdui-text-color-white mdui-text-center">
     <a href="https://github.com/yunuoyumeng" class="mdui-btn mdui-btn-icon mdui-ripple" rel="external noopener"
-      mdui-tooltip="{content: 'GitHub'}" target="_blank"><i class="mdui-icon materiality-icons">
-        <svg viewbox="0 0 36 36" class="mdui-icon" style="width:24px;height:48px;">
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+      mdui-tooltip="{content: 'GitHub'}" target="_blank">
+      <i class="mdui-icon materiality-icons">
+        <svg viewbox="0 0 36 36" class="mdui-icon" style="width:24px; height:48px;">
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="correctcolor" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
                     c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
                     c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
                     c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
                     c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
                     c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z" />
-        </svg></i></a>
+        </svg>
+      </i>
+    </a>
     <div class="mdui-typo">
       <span>©2021 是小志呀 版权所有</span>
     </div>
-</body>
-
-<!-- MDUI JavaScript -->
-<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+  </div>
+  <!-- MDUI JavaScript -->
+  <script src="js/mdui.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>

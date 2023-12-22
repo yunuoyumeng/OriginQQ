@@ -1,123 +1,113 @@
 <!doctype html>
 <html lang="zh-cmn-Hans">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
-    <meta name="renderer" content="webkit"/>
-    <meta name="force-rendering" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  	<meta name="description" content="8.8.98猫雨雫下载页面" />
-  	<meta name="keywords" content="8.8.98猫雨雫下载页面" />
-    <link rel="stylesheet" href="../css/mdui.min.css"/>
-	<link rel="stylesheet" href="../bootstrap//css/bootstrap.css" />
-    <title>8.8.98猫雨雫</title>
-</head>
-<body class="mdui-drawer-body-left mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
 
-	<div class="mdui-appbar mdui-appbar-fixed mdui-text-color-text-theme mdui-shadow-0" style="transition:2s">
-  		<div class="mdui-toolbar">
-  			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}"><i class="mdui-icon material-icons">menu</i></button>
-    		<a href="javascript:;" class="mdui-typo-title" id="main-title">APP</a>
-    		<div class="mdui-toolbar-spacer"></div>
-    		<button class="mdui-btn mdui-btn-icon" mdui-menu="{target:'#main-menu'}"><i class="mdui-icon material-icons">more_vert</i></button>
-    		<ul class="mdui-menu" id="main-menu">
-              	<li class="mdui-menu-item" mdui-dialog="{target:'#post'}">
-                	<a href="javascript:void(0);" class="mdui-ripple">公告</a>
-              	</li>
-            </ul>
-  		</div>
-	</div>
-	
-	<div class="mdui-drawer" id="main-drawer">
-  		<ul class="mdui-list">
-        	<li class="mdui-subheader">Menu</li>
-        	<li class="mdui-list-item mdui-ripple" onclick="window.location.href='./8.8.98myn.html';">
-          		<i class="mdui-list-item-icon mdui-icon material-icons">book</i>
-          		<div class="mdui-list-item-content">文档</div>
-        	</li>
-        	<li class="mdui-list-item mdui-ripple" onclick="window.location.href='http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=isir7DNpuSi3SLtzMTFIwAQnFpOQ1env&authKey=zXMwCOfcEswjhfzBHzFDYzvbM%2FdGKl7sv5BWesTRGcNSqWj3O1e2SL5x%2FibfOxJL&noverify=0&group_code=487235954';">
-          		<i class="mdui-list-item-icon mdui-icon material-icons">cloud_download</i>
-          		<div class="mdui-list-item-content">下载</div>
-        	</li>
-       	</ul>
-        	<div class="mdui-subheader">Powered</div>
-        <div class="mdui-m-x-2">
-        	<div class="mdui-chip">
-				<img class="mdui-chip-icon" src="https://q.qlogo.cn/headimg_dl?dst_uin=3487095186&spec=640"/>
-				<span class="mdui-chip-title">雨诺域梦</span>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+	<meta name="renderer" content="webkit" />
+	<meta name="force-rendering" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="8.8.98猫雨雫下载页面" />
+	<meta name="keywords" content="8.8.98猫雨雫下载页面" />
+	<link rel="stylesheet" href="../css/mdui.min.css" />
+	<link rel="stylesheet" href="../bootstrap//css/bootstrap.css" />
+	<script src="../js/jquery.min.js"></script>
+	<link rel="icon" href="../icons/icon.svg">
+	<title>8.8.98猫雨雫</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #26c6da !important;;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/index.html">小陌美化社</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<li class="mdui-list-item mdui-ripple" onclick="window.location.href='8.8.98myn.html';">
+					<i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+					<div class="mdui-list-item-content">文档</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"
+					onclick="window.location.href='http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=isir7DNpuSi3SLtzMTFIwAQnFpOQ1env&authKey=zXMwCOfcEswjhfzBHzFDYzvbM%2FdGKl7sv5BWesTRGcNSqWj3O1e2SL5x%2FibfOxJL&noverify=0&group_code=487235954';">
+					<i class="mdui-list-item-icon mdui-icon material-icons">cloud_download</i>
+					<div class="mdui-list-item-content">下载</div>
+				</li>
 			</div>
-			<div class="mdui-chip">
-				<img class="mdui-chip-icon" src="https://q.qlogo.cn/headimg_dl?dst_uin=1243489381&spec=640"/>
-				<span class="mdui-chip-title">小陌</span>
-			</div>
-			<br>
 		</div>
-  	</div>
-  	
-  	<div class="mdui-dialog" id="post">
-      	<div class="mdui-tab mdui-tab-full-width" mdui-tab>
-        	<a href="#updateLog" class="mdui-ripple">更新记录</a>
-        	<a href="#autherSay" class="mdui-ripple">作者的话</a>
-      	</div>
-      	<div id="autherSay" class="mdui-p-a-2 mdui-typo">
-        	<p>本APP将不进行维护，如出现问题请自行解决！</p>
-      	</div>
-      	<div id="updateLog" class="mdui-p-a-2">
-        	<ul class="mdui-list">
-  				<li class="mdui-list-item mdui-ripple">2022-07-05 无</li>
-  				<li class="mdui-divider"></li>
-  				<li class="mdui-list-item mdui-ripple">2022-xx07-05 更新了第二个版本</li>
+	</nav>
+
+
+
+	<div class="mdui-dialog" id="post">
+		<div class="mdui-tab mdui-tab-full-width" mdui-tab>
+			<a href="#updateLog" class="mdui-ripple">更新记录</a>
+			<a href="#autherSay" class="mdui-ripple">作者的话</a>
+		</div>
+		<div id="autherSay" class="mdui-p-a-2 mdui-typo">
+			<p>本APP将不进行维护，如出现问题请自行解决！</p>
+		</div>
+		<div id="updateLog" class="mdui-p-a-2">
+			<ul class="mdui-list">
+				<li class="mdui-list-item mdui-ripple">2022-07-05 无</li>
+				<li class="mdui-divider"></li>
+				<li class="mdui-list-item mdui-ripple">2022-xx07-05 更新了第二个版本</li>
 			</ul>
-      	</div>
-    </div>
-  	
-  	<div class="mdui-color-white mdui-text-center" style="padding-top:120px;padding-bottom:30px;">
-  		<img class="mdui-shadow-5" src="https://ts1.cn.mm.bing.net/th/id/R-C.7a002178ee372889748fa516ae2e32b3?rik=C8qOXejvufqx8A&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f24%2f25%2fWbUdq4WCJ6.jpg&ehk=ERsMyu23nW1x%2buDgWeFRS8PNp5N8Eqi%2bOYeOFqglh6c%3d&risl=&pid=ImgRaw&r=0" width="80" height="80" style="border-radius:10px;" />
-  		<h2>8.8.98猫雨雫</h2>
-  		<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" mdui-tooltip="{content: 'v8.8.98-241MB'}" onclick="window.open('http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=isir7DNpuSi3SLtzMTFIwAQnFpOQ1env&authKey=zXMwCOfcEswjhfzBHzFDYzvbM%2FdGKl7sv5BWesTRGcNSqWj3O1e2SL5x%2FibfOxJL&noverify=0&group_code=487235954')"><i class="mdui-icon material-icons">file_download</i> 下载</button>
-  	</div>
-  	
-  	<div class="mdui-container-fluid mdui-p-y-4 mdui-text-center mdui-color-white">
-  		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;" src="https://yunuoyumeng.github.io/OriginQQ/img/8.8.98myn1.png" />
-  		<h2 class="mdui-text-color-theme">逆天</h2>
-  		<p>距离社死更进一步</p>
-  		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;" src="https://yunuoyumeng.github.io/OriginQQ/img/8.8.98myn2.png" />
-  		<h2 class="mdui-text-color-theme">卧槽，二次元</h2>
-  		<p>坐你旁边的小伙这样说道</p>
-  		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;" src="https://yunuoyumeng.github.io/OriginQQ/img/8.8.98myn3.png" />
-  		<h2 class="mdui-text-color-theme">漂亮</h2>
-  		<p>漂亮滴很呐（喜）</p>
-  		
-  	</div>
-	
-	<!-- footer -->
-	<div class="mdui-p-y-2 mdui-color-theme mdui-text-color-white mdui-text-center">
-		<a class="mdui-btn mdui-btn-icon" href="mailto:3487095186@qq.com"><i class="mdui-icon material-icons">email</i></a><br>
-		<span>©Copyright 2021 雨诺域梦</span>
+		</div>
 	</div>
-	
-<!--
-vConsole控制台
-<script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
-<script>
-var vConsole = new VConsole ();
-</script>
--->
-	<script src="./js/mdui.min.js"></script>
-	<script src="./js/jquery.min.js"></script>
-	<script type="text/javascript" charset="utf-8">
-	  $(window).scroll(function(){
-	    var scrollTop = $(window).scrollTop();
-	   if (scrollTop < 100) {
-	      $(".mdui-appbar").removeClass("mdui-color-theme");
-          $(".mdui-appbar").addClass("mdui-text-color-black");
-          $(".mdui-appbar").removeClass("mdui-text-color-white")
-	   } else {
-	      $(".mdui-appbar").addClass("mdui-text-color-white");
-	      $(".mdui-appbar").addClass("mdui-color-theme");
-	      $(".mdui-appbar").removeClass("mdui-text-color-black");
-	   }
-	  });
-	</script>
+
+	<div class="mdui-color-white mdui-text-center" style="padding-top:120px;padding-bottom:30px;">
+		<img class="mdui-shadow-5"
+			src="https://ts1.cn.mm.bing.net/th/id/R-C.7a002178ee372889748fa516ae2e32b3?rik=C8qOXejvufqx8A&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f24%2f25%2fWbUdq4WCJ6.jpg&ehk=ERsMyu23nW1x%2buDgWeFRS8PNp5N8Eqi%2bOYeOFqglh6c%3d&risl=&pid=ImgRaw&r=0"
+			width="80" height="80" style="border-radius:10px;" loading="lazy" />
+		<h2 class="p-2">8.8.98猫雨雫</h2>
+	</div>
+
+	<div class="mdui-container-fluid mdui-p-y-4 mdui-text-center mdui-color-white">
+		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;"
+			src="https://yunuoyumeng.github.io/OriginQQ/img/8.8.98myn1.png" loading="lazy" />
+		<h2 class="mdui-text-color-theme p-1">逆天</h2>
+		<p>距离社死更进一步</p>
+		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;"
+			src="https://yunuoyumeng.github.io/OriginQQ/img/8.8.98myn2.png" loading="lazy" />
+		<h2 class="mdui-text-color-theme p-1">卧槽，二次元</h2>
+		<p>坐你旁边的小伙这样说道</p>
+		<img class="mdui-img mdui-shadow-5" style="border-radius:5px;width:70%;height:auto;"
+			src="https://yunuoyumeng.github.io/OriginQQ/img/8.8.98myn3.png" loading="lazy" />
+		<h2 class="mdui-text-color-theme p-1">漂亮</h2>
+		<p>漂亮滴很呐（喜）</p>
+
+		<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
+			mdui-tooltip="{content: 'v8.8.98-241MB'}"
+			onclick="window.open('http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=isir7DNpuSi3SLtzMTFIwAQnFpOQ1env&authKey=zXMwCOfcEswjhfzBHzFDYzvbM%2FdGKl7sv5BWesTRGcNSqWj3O1e2SL5x%2FibfOxJL&noverify=0&group_code=487235954')"><i
+				class="mdui-icon material-icons">file_download</i> 下载</button>
+	</div>
+
+	<!-- footer -->
+	<div class="mdui-divider position-fixed bottom-0"></div>
+	<div class="mdui-p-y-2 mdui-color-cyan-400 mdui-text-color-white mdui-text-center">
+		<a href="https://github.com/yunuoyumeng" class="mdui-btn mdui-btn-icon mdui-ripple" rel="external noopener"
+			mdui-tooltip="{content: 'GitHub'}" target="_blank">
+			<i class="mdui-icon materiality-icons">
+				<svg viewbox="0 0 36 36" class="mdui-icon" style="width:24px; height:48px;">
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="correctcolor" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+                    c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+                    c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+                    c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+                    c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+                    c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z" />
+				</svg>
+			</i>
+		</a>
+		<div class="mdui-typo">
+			<span>©2021 是小志呀 版权所有</span>
+		</div>
+	</div>
+
+	<script src="../js/mdui.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
